@@ -6,7 +6,7 @@ namespace CalcForms
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter first operator: ");
+            Console.Write("Enter first operatorrr: ");
             string op1 = Console.ReadLine();
 
             Console.Write("Enter second operator: ");

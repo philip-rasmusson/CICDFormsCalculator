@@ -45,6 +45,7 @@
             this.button_muliplication = new System.Windows.Forms.Button();
             this.button_0 = new System.Windows.Forms.Button();
             this.RealOutputBox = new System.Windows.Forms.RichTextBox();
+            this.button_clear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button_1
@@ -208,9 +209,19 @@
             this.RealOutputBox.Text = "";
             this.RealOutputBox.TextChanged += new System.EventHandler(this.RealOutputBox_TextChanged);
             // 
+            // button_clear
+            // 
+            this.button_clear.Location = new System.Drawing.Point(251, 12);
+            this.button_clear.Name = "button_clear";
+            this.button_clear.Size = new System.Drawing.Size(75, 28);
+            this.button_clear.TabIndex = 16;
+            this.button_clear.Text = "Clear";
+            this.button_clear.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(385, 366);
+            this.Controls.Add(this.button_clear);
             this.Controls.Add(this.RealOutputBox);
             this.Controls.Add(this.button_0);
             this.Controls.Add(this.button_muliplication);
@@ -250,6 +261,7 @@
         private System.Windows.Forms.Button button_muliplication;
         private System.Windows.Forms.Button button_0;
         private System.Windows.Forms.RichTextBox RealOutputBox;
+        private System.Windows.Forms.Button button_clear;
     }
 }
 

@@ -202,6 +202,7 @@
             // 
             this.RealOutputBox.Location = new System.Drawing.Point(12, 12);
             this.RealOutputBox.Name = "RealOutputBox";
+            this.RealOutputBox.ReadOnly = true;
             this.RealOutputBox.Size = new System.Drawing.Size(233, 48);
             this.RealOutputBox.TabIndex = 15;
             this.RealOutputBox.Text = "";

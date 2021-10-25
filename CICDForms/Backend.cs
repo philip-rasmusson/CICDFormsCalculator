@@ -1,10 +1,14 @@
-﻿using System;
-
-namespace CalcForms
+﻿namespace CICDForms
 {
-    internal class Program
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+
+    internal static class Backend
     {
-        public static void NewMethod()
+        public static void Calculator()
         {
             Console.Write("Enter first operator: ");
             string op1 = Console.ReadLine();
@@ -104,11 +108,6 @@ namespace CalcForms
                 int summa = (first / second) * third;
                 Console.WriteLine(first + op1 + second + op2 + third + "=" + summa);
             }
-        }
-
-        private static void Main(string[] args)
-        {
-            NewMethod();
         }
     }
 }

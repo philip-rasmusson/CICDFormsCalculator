@@ -15,12 +15,10 @@
 
         public static void Calculation(char op)
         {
-            Input = TempInput;
-
-            if (Value == 0)
-            {
-                Value = Convert.ToInt32(TempInput);
-            }
+            //if (Value == 0)
+            //{
+            //    Value = Convert.ToInt32(TempInput);
+            //}
             if (op == '+')
             {
                 Value += Convert.ToInt32(TempInput);

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcForms", "CalcForms\CalcForms.csproj", "{EEF503C1-258A-48D2-B8AC-A0ECAB599898}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CICDForms", "CICDForms\CICDForms.csproj", "{DA49C570-6764-4152-96EA-621D27DFA75E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EEF503C1-258A-48D2-B8AC-A0ECAB599898}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EEF503C1-258A-48D2-B8AC-A0ECAB599898}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EEF503C1-258A-48D2-B8AC-A0ECAB599898}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EEF503C1-258A-48D2-B8AC-A0ECAB599898}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA49C570-6764-4152-96EA-621D27DFA75E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA49C570-6764-4152-96EA-621D27DFA75E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA49C570-6764-4152-96EA-621D27DFA75E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA49C570-6764-4152-96EA-621D27DFA75E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

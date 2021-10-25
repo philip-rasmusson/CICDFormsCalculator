@@ -17,79 +17,108 @@
             InitializeComponent();
         }
 
-        private void button_0_Click(object sender, EventArgs e)
+        private void Button_0_Click(object sender, EventArgs e)
         {
-            this.RealOutputBox.Text += 0;
+            Calculations.TempInput += "0";
+            this.RealOutputBox.Text = Calculations.TempInput;
         }
 
-        private void button_1_Click(object sender, EventArgs e)
+        private void Button_1_Click(object sender, EventArgs e)
         {
-            this.RealOutputBox.Text += 1;
+            Calculations.TempInput += "1";
+            this.RealOutputBox.Text = Calculations.TempInput;
         }
 
-        private void button_2_Click(object sender, EventArgs e)
+        private void Button_2_Click(object sender, EventArgs e)
         {
-            this.RealOutputBox.Text += 2;
+            Calculations.TempInput += "2";
+            this.RealOutputBox.Text = Calculations.TempInput;
         }
 
-        private void button_3_Click(object sender, EventArgs e)
+        private void Button_3_Click(object sender, EventArgs e)
         {
-            this.RealOutputBox.Text += 3;
+            Calculations.TempInput += "3";
+            this.RealOutputBox.Text = Calculations.TempInput;
         }
 
-        private void button_4_Click(object sender, EventArgs e)
+        private void Button_4_Click(object sender, EventArgs e)
         {
-            this.RealOutputBox.Text += 4;
+            Calculations.TempInput += "4";
+            this.RealOutputBox.Text = Calculations.TempInput;
         }
 
-        private void button_5_Click(object sender, EventArgs e)
+        private void Button_5_Click(object sender, EventArgs e)
         {
-            this.RealOutputBox.Text += 5;
+            Calculations.TempInput += "5";
+            this.RealOutputBox.Text = Calculations.TempInput;
         }
 
-        private void button_6_Click(object sender, EventArgs e)
+        private void Button_6_Click(object sender, EventArgs e)
         {
-            this.RealOutputBox.Text += 6;
+            Calculations.TempInput += "6";
+            this.RealOutputBox.Text = Calculations.TempInput;
         }
 
-        private void button_7_Click(object sender, EventArgs e)
+        private void Button_7_Click(object sender, EventArgs e)
         {
-            this.RealOutputBox.Text += 7;
+            Calculations.TempInput += "7";
+            this.RealOutputBox.Text = Calculations.TempInput;
         }
 
-        private void button_8_Click(object sender, EventArgs e)
+        private void Button_8_Click(object sender, EventArgs e)
         {
-            this.RealOutputBox.Text += 8;
+            Calculations.TempInput += "8";
+            this.RealOutputBox.Text = Calculations.TempInput;
         }
 
-        private void button_9_Click(object sender, EventArgs e)
+        private void Button_9_Click(object sender, EventArgs e)
         {
-            this.RealOutputBox.Text += 9;
+            Calculations.TempInput += "9";
+            this.RealOutputBox.Text = Calculations.TempInput;
         }
 
-        private void button_division_Click(object sender, EventArgs e)
+        private void Button_Clear_Click(object sender, EventArgs e)
         {
-            this.RealOutputBox.Text += "/";
+            Calculations.ClearInput();
+            this.RealOutputBox.Text = "";
         }
 
-        private void button_equal_Click(object sender, EventArgs e)
+        private void Button_Division_Click(object sender, EventArgs e)
         {
-            this.RealOutputBox.Text += "=";
+            Calculations.Operand = '/';
+            Calculations.Input = Calculations.TempInput;
+            this.RealOutputBox.Text = Convert.ToString(Calculations.Operand);
+            Calculations.Calculation(Calculations.Operand);
         }
 
-        private void button_m1nus_Click(object sender, EventArgs e)
+        private void Button_Equals_Click(object sender, EventArgs e)
         {
-            this.RealOutputBox.Text += "-";
+            Calculations.Calculation(Calculations.Operand);
+            this.RealOutputBox.Text = Calculations.Value.ToString();
         }
 
-        private void button_muliplication_Click(object sender, EventArgs e)
+        private void Button_Minus_Click(object sender, EventArgs e)
         {
-            this.RealOutputBox.Text += "*";
+            Calculations.Operand = '-';
+            Calculations.Input = Calculations.TempInput;
+            this.RealOutputBox.Text = Convert.ToString(Calculations.Operand);
+            Calculations.Calculation(Calculations.Operand);
         }
 
-        private void button_p1us_Click(object sender, EventArgs e)
+        private void Button_Multiplication_Click(object sender, EventArgs e)
         {
-            this.RealOutputBox.Text += "+";
+            Calculations.Operand = '*';
+            Calculations.Input = Calculations.TempInput;
+            this.RealOutputBox.Text = Convert.ToString(Calculations.Operand);
+            Calculations.Calculation(Calculations.Operand);
+        }
+
+        private void Button_Plus_Click(object sender, EventArgs e)
+        {
+            Calculations.Operand = '+';
+            Calculations.Input = Calculations.TempInput;
+            this.RealOutputBox.Text = Convert.ToString(Calculations.Operand);
+            Calculations.Calculation(Calculations.Operand);
         }
 
         private void RealOutputBox_TextChanged(object sender, EventArgs e)

@@ -46,6 +46,7 @@
             this.button_0 = new System.Windows.Forms.Button();
             this.RealOutputBox = new System.Windows.Forms.RichTextBox();
             this.button_clear = new System.Windows.Forms.Button();
+            this.button_comma = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button_1
@@ -219,9 +220,20 @@
             this.button_clear.UseVisualStyleBackColor = true;
             this.button_clear.Click += new System.EventHandler(this.Button_Clear_Click);
             // 
+            // button_comma
+            // 
+            this.button_comma.Location = new System.Drawing.Point(171, 256);
+            this.button_comma.Name = "button_comma";
+            this.button_comma.Size = new System.Drawing.Size(74, 56);
+            this.button_comma.TabIndex = 17;
+            this.button_comma.Text = ",";
+            this.button_comma.UseVisualStyleBackColor = true;
+            this.button_comma.Click += new System.EventHandler(this.button_comma_Click);
+            // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(385, 366);
+            this.Controls.Add(this.button_comma);
             this.Controls.Add(this.button_clear);
             this.Controls.Add(this.RealOutputBox);
             this.Controls.Add(this.button_0);
@@ -263,6 +275,7 @@
         private System.Windows.Forms.Button button_0;
         private System.Windows.Forms.RichTextBox RealOutputBox;
         private System.Windows.Forms.Button button_clear;
+        private System.Windows.Forms.Button button_comma;
     }
 }
 

@@ -79,50 +79,106 @@
 
         private void Button_Clear_Click(object sender, EventArgs e)
         {
-            Calculations.ClearInput();
+            
             this.RealOutputBox.Text = "";
         }
 
         private void Button_Division_Click(object sender, EventArgs e)
         {
             Calculations.Operand = '/';
-            Calculations.Input = Calculations.TempInput;
+            if (Calculations.Input == Double.MinValue)
+            {
+                Calculations.Input = Calculations.Value;
+            }
+            else
+            {
+                Calculations.Input = Convert.ToInt32(Calculations.TempInput);
+            }
+            Calculations.TempInput = null;
             this.RealOutputBox.Text = Convert.ToString(Calculations.Operand);
-            Calculations.Calculation(Calculations.Operand);
+            //Calculations.Calculation(Calculations.Operand);
         }
 
         private void Button_Equals_Click(object sender, EventArgs e)
         {
-            Calculations.Calculation(Calculations.Operand);
+            Calculations.Calculation(Calculations.Operand);            
             this.RealOutputBox.Text = Calculations.Value.ToString();
+            Calculations.TempInput = null;
         }
 
         private void Button_Minus_Click(object sender, EventArgs e)
         {
-            Calculations.Operand = '-';
-            Calculations.Input = Calculations.TempInput;
-            this.RealOutputBox.Text = Convert.ToString(Calculations.Operand);
-            Calculations.Calculation(Calculations.Operand);
+            if(Calculations.TempInput == null)
+            {
+                if (Calculations.TempInput == null || !Calculations.TempInput.Contains('-'))
+                {
+                    Calculations.TempInput += "-";
+                    this.RealOutputBox.Text = Calculations.TempInput;
+
+                }
+            }
+            else
+            {
+                Calculations.Operand = '-';
+                if (Calculations.Input == int.MaxValue)
+                {
+                    Calculations.Input = Calculations.Value;
+                }
+                else
+                {
+                    Calculations.Input = Convert.ToInt32(Calculations.TempInput);
+                }
+                this.RealOutputBox.Text = Convert.ToString(Calculations.Operand);
+                Calculations.TempInput = null;
+
+            }
+            
         }
 
         private void Button_Multiplication_Click(object sender, EventArgs e)
         {
             Calculations.Operand = '*';
-            Calculations.Input = Calculations.TempInput;
+            if (Calculations.Input == int.MaxValue)
+            {
+                Calculations.Input = Calculations.Value;
+            }
+            else
+            {
+                Calculations.Input = Convert.ToInt32(Calculations.TempInput);
+            }
             this.RealOutputBox.Text = Convert.ToString(Calculations.Operand);
-            Calculations.Calculation(Calculations.Operand);
+            Calculations.TempInput = null;
         }
 
         private void Button_Plus_Click(object sender, EventArgs e)
         {
             Calculations.Operand = '+';
-            Calculations.Input = Calculations.TempInput;
+            if(Calculations.Input == int.MaxValue)
+            {
+                Calculations.Input = Calculations.Value;                     
+            }
+            else
+            {
+            Calculations.Input = Convert.ToInt32(Calculations.TempInput);
+            }
+            Calculations.TempInput = null;
             this.RealOutputBox.Text = Convert.ToString(Calculations.Operand);
-            Calculations.Calculation(Calculations.Operand);
+           
         }
 
         private void RealOutputBox_TextChanged(object sender, EventArgs e)
         {
+        }
+
+        private void button_comma_Click(object sender, EventArgs e)
+        {
+            if (!Calculations.TempInput.Contains(','))
+            {
+                Calculations.TempInput += ",";
+                this.RealOutputBox.Text = Calculations.TempInput;
+
+            }
+          
         }
     }
 }

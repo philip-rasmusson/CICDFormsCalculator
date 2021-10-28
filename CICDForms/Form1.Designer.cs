@@ -207,7 +207,6 @@
             this.RealOutputBox.Size = new System.Drawing.Size(233, 48);
             this.RealOutputBox.TabIndex = 15;
             this.RealOutputBox.Text = "";
-            this.RealOutputBox.TextChanged += new System.EventHandler(this.RealOutputBox_TextChanged);
             // 
             // button_clear
             // 

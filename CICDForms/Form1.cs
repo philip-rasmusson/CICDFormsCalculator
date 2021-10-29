@@ -79,7 +79,7 @@
 
         private void Button_Clear_Click(object sender, EventArgs e)
         {
-            
+            new Clear().ClearInput();
             this.RealOutputBox.Text = "";
         }
 

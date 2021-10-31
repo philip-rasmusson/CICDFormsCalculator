@@ -47,6 +47,7 @@
             this.RealOutputBox = new System.Windows.Forms.RichTextBox();
             this.button_clear = new System.Windows.Forms.Button();
             this.Button_SquareRoot = new System.Windows.Forms.Button();
+            this.Button_RemoveLast = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button_1
@@ -229,9 +230,20 @@
             this.Button_SquareRoot.UseVisualStyleBackColor = true;
             this.Button_SquareRoot.Click += new System.EventHandler(this.Button_SquareRoot_Click);
             // 
+            // Button_RemoveLast
+            // 
+            this.Button_RemoveLast.Location = new System.Drawing.Point(332, 12);
+            this.Button_RemoveLast.Name = "Button_RemoveLast";
+            this.Button_RemoveLast.Size = new System.Drawing.Size(75, 28);
+            this.Button_RemoveLast.TabIndex = 18;
+            this.Button_RemoveLast.Text = "Remove";
+            this.Button_RemoveLast.UseVisualStyleBackColor = true;
+            this.Button_RemoveLast.Click += new System.EventHandler(this.Button_RemoveLast_Click);
+            // 
             // Form1
             // 
-            this.ClientSize = new System.Drawing.Size(385, 366);
+            this.ClientSize = new System.Drawing.Size(411, 366);
+            this.Controls.Add(this.Button_RemoveLast);
             this.Controls.Add(this.Button_SquareRoot);
             this.Controls.Add(this.button_clear);
             this.Controls.Add(this.RealOutputBox);
@@ -275,6 +287,7 @@
         private System.Windows.Forms.RichTextBox RealOutputBox;
         private System.Windows.Forms.Button button_clear;
         private System.Windows.Forms.Button Button_SquareRoot;
+        private System.Windows.Forms.Button Button_RemoveLast;
     }
 }
 

@@ -167,6 +167,11 @@
             Operation = "+";
         }
 
+        private void Button_RemoveLast_Click(object sender, EventArgs e)
+        {
+            RealOutputBox.Text = RealOutputBox.Text.Remove(RealOutputBox.Text.Length - 1);
+        }
+
         private void Button_SquareRoot_Click(object sender, EventArgs e)
         {
             FirstNumber = Convert.ToDouble(RealOutputBox.Text);

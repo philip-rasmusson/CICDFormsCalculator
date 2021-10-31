@@ -25,7 +25,6 @@
 
         private void Button_1_Click(object sender, EventArgs e)
         {
-            RealOutputBox.Text = "";
             if (RealOutputBox.Text is "0" and not null)
                 RealOutputBox.Text = "1";
             else
@@ -34,7 +33,6 @@
 
         private void Button_2_Click(object sender, EventArgs e)
         {
-            RealOutputBox.Text = "";
             if (RealOutputBox.Text is "0" and not null)
                 RealOutputBox.Text = "2";
             else
@@ -43,7 +41,6 @@
 
         private void Button_3_Click(object sender, EventArgs e)
         {
-            RealOutputBox.Text = "";
             if (RealOutputBox.Text is "0" and not null)
                 RealOutputBox.Text = "3";
             else
@@ -52,7 +49,6 @@
 
         private void Button_4_Click(object sender, EventArgs e)
         {
-            RealOutputBox.Text = "";
             if (RealOutputBox.Text is "0" and not null)
                 RealOutputBox.Text = "4";
             else
@@ -61,7 +57,6 @@
 
         private void Button_5_Click(object sender, EventArgs e)
         {
-            RealOutputBox.Text = "";
             if (RealOutputBox.Text is "0" and not null)
                 RealOutputBox.Text = "5";
             else
@@ -70,7 +65,6 @@
 
         private void Button_6_Click(object sender, EventArgs e)
         {
-            RealOutputBox.Text = "";
             if (RealOutputBox.Text is "0" and not null)
                 RealOutputBox.Text = "6";
             else
@@ -79,7 +73,6 @@
 
         private void Button_7_Click(object sender, EventArgs e)
         {
-            RealOutputBox.Text = "";
             if (RealOutputBox.Text is "0" and not null)
                 RealOutputBox.Text = "7";
             else
@@ -88,7 +81,6 @@
 
         private void Button_8_Click(object sender, EventArgs e)
         {
-            RealOutputBox.Text = "";
             if (RealOutputBox.Text is "0" and not null)
                 RealOutputBox.Text = "8";
             else
@@ -97,7 +89,6 @@
 
         private void Button_9_Click(object sender, EventArgs e)
         {
-            RealOutputBox.Text = "";
             if (RealOutputBox.Text is "0" and not null)
                 RealOutputBox.Text = "9";
             else

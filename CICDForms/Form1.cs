@@ -101,9 +101,8 @@
         private void Button_Division_Click(object sender, EventArgs e)
         {
             FirstNumber = Convert.ToDouble(RealOutputBox.Text);
-            RealOutputBox.Text = "/";
+            RealOutputBox.Text = "0";
             Operation = "/";
-            RealOutputBox.Text = "";
         }
 
         private void Button_Equals_Click(object sender, EventArgs e)
@@ -150,33 +149,29 @@
         private void Button_Minus_Click(object sender, EventArgs e)
         {
             FirstNumber = Convert.ToDouble(RealOutputBox.Text);
-            RealOutputBox.Text = "-";
+            RealOutputBox.Text = "0";
             Operation = "-";
-            RealOutputBox.Text = "";
         }
 
         private void Button_Multiplication_Click(object sender, EventArgs e)
         {
             FirstNumber = Convert.ToDouble(RealOutputBox.Text);
-            RealOutputBox.Text = "*";
+            RealOutputBox.Text = "0";
             Operation = "*";
-            RealOutputBox.Text = "";
         }
 
         private void Button_Plus_Click(object sender, EventArgs e)
         {
             FirstNumber = Convert.ToDouble(RealOutputBox.Text);
-            RealOutputBox.Text = "+";
+            RealOutputBox.Text = "0";
             Operation = "+";
-            RealOutputBox.Text = "";
         }
 
         private void Button_SquareRoot_Click(object sender, EventArgs e)
         {
             FirstNumber = Convert.ToDouble(RealOutputBox.Text);
-            RealOutputBox.Text = "√";
+            RealOutputBox.Text = "0";
             Operation = "√";
-            RealOutputBox.Text = "";
         }
     }
 }

@@ -115,6 +115,12 @@
 
         private void Button_Equals_Click(object sender, EventArgs e)
         {
+            if (Operation == "√")
+            {
+                Result = Convert.ToDouble(Math.Sqrt(FirstNumber));
+                RealOutputBox.Text = Convert.ToString(Result);
+                FirstNumber = Result;
+            }
             if (Operation == "+")
             {
                 Result = FirstNumber + Convert.ToDouble(RealOutputBox.Text);
@@ -167,6 +173,13 @@
             FirstNumber = Convert.ToDouble(RealOutputBox.Text);
             RealOutputBox.Text = "+";
             Operation = "+";
+        }
+
+        private void Button_SquareRoot_Click(object sender, EventArgs e)
+        {
+            FirstNumber = Convert.ToDouble(RealOutputBox.Text);
+            RealOutputBox.Text = "√";
+            Operation = "√";
         }
     }
 }

@@ -46,6 +46,7 @@
             this.button_0 = new System.Windows.Forms.Button();
             this.RealOutputBox = new System.Windows.Forms.RichTextBox();
             this.button_clear = new System.Windows.Forms.Button();
+            this.Button_SquareRoot = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button_1
@@ -218,9 +219,20 @@
             this.button_clear.UseVisualStyleBackColor = true;
             this.button_clear.Click += new System.EventHandler(this.Button_Clear_Click);
             // 
+            // Button_SquareRoot
+            // 
+            this.Button_SquareRoot.Location = new System.Drawing.Point(284, 51);
+            this.Button_SquareRoot.Name = "Button_SquareRoot";
+            this.Button_SquareRoot.Size = new System.Drawing.Size(75, 28);
+            this.Button_SquareRoot.TabIndex = 17;
+            this.Button_SquareRoot.Text = "√";
+            this.Button_SquareRoot.UseVisualStyleBackColor = true;
+            this.Button_SquareRoot.Click += new System.EventHandler(this.Button_SquareRoot_Click);
+            // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(385, 366);
+            this.Controls.Add(this.Button_SquareRoot);
             this.Controls.Add(this.button_clear);
             this.Controls.Add(this.RealOutputBox);
             this.Controls.Add(this.button_0);
@@ -262,6 +274,7 @@
         private System.Windows.Forms.Button button_0;
         private System.Windows.Forms.RichTextBox RealOutputBox;
         private System.Windows.Forms.Button button_clear;
+        private System.Windows.Forms.Button Button_SquareRoot;
     }
 }
 

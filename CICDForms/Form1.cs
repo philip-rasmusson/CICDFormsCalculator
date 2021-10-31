@@ -7,6 +7,7 @@
     using System.Drawing;
     using System.Linq;
     using System.Text;
+    using System.Threading;
     using System.Threading.Tasks;
     using System.Windows.Forms;
 
@@ -102,6 +103,7 @@
             FirstNumber = Convert.ToDouble(RealOutputBox.Text);
             RealOutputBox.Text = "/";
             Operation = "/";
+            RealOutputBox.Text = "";
         }
 
         private void Button_Equals_Click(object sender, EventArgs e)
@@ -150,6 +152,7 @@
             FirstNumber = Convert.ToDouble(RealOutputBox.Text);
             RealOutputBox.Text = "-";
             Operation = "-";
+            RealOutputBox.Text = "";
         }
 
         private void Button_Multiplication_Click(object sender, EventArgs e)
@@ -157,6 +160,7 @@
             FirstNumber = Convert.ToDouble(RealOutputBox.Text);
             RealOutputBox.Text = "*";
             Operation = "*";
+            RealOutputBox.Text = "";
         }
 
         private void Button_Plus_Click(object sender, EventArgs e)
@@ -164,6 +168,7 @@
             FirstNumber = Convert.ToDouble(RealOutputBox.Text);
             RealOutputBox.Text = "+";
             Operation = "+";
+            RealOutputBox.Text = "";
         }
 
         private void Button_SquareRoot_Click(object sender, EventArgs e)
@@ -171,6 +176,7 @@
             FirstNumber = Convert.ToDouble(RealOutputBox.Text);
             RealOutputBox.Text = "√";
             Operation = "√";
+            RealOutputBox.Text = "";
         }
     }
 }
